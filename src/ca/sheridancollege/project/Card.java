@@ -22,5 +22,32 @@ public abstract class Card
     
     @Override
     public abstract String toString();
+
+	public int getRank() {
+		return this.rank;
+	}
+
+	/**
+	 * 
+	 * @param rank
+	 */
+	public void setRank(int rank) {
+		this.rank = rank;
+	}
+
+	public String getSuit() {
+		return this.suit;
+	}
+
+	/**
+	 * 
+	 * @param suit
+	 */
+	public void setSuit(String suit) {
+		this.suit = suit;
+	}
+
+	private int rank;
+	private String suit;
     
 }
